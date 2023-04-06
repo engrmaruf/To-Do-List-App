@@ -1,0 +1,241 @@
+/* Part 1: General Styles */
+
+/* Reset default browser styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Set a background color for the page */
+body {
+	background-color: #f4f4f4;
+}
+
+/* Style the container div */
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* Style the heading */
+h1 {
+	text-align: center;
+	font-size: 3em;
+	margin-bottom: 30px;
+	font-family: Arial, sans-serif;
+}
+/* Part 2: Add New Task Form */
+
+/* Style the form for adding new tasks */
+#addForm {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+/* Style the input for adding new tasks */
+#newTask {
+	flex-grow: 1;
+	padding: 10px;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+/* Style the button for adding new tasks */
+#addForm button {
+	padding: 10px;
+	font-size: 1.2em;
+	color: #fff;
+	background-color: #2196F3;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+  margin-left: 10px;
+}
+
+/* Style the button on hover */
+#addForm button:hover {
+	background-color: #0e7ce3;
+}
+/* Part 3: Task List */
+
+/* Style the task list */
+ul {
+	list-style: none;
+	margin-bottom: 30px;
+}
+
+/* Style each task */
+li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the task text */
+.task-text {
+	flex-grow: 1;
+	font-size: 1.2em;
+	font-family: Arial, sans-serif;
+}
+
+/* Style the task buttons */
+.task-buttons button {
+	padding: 10px;
+	font-size: 1.2em;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+/* Style the edit button */
+.task-buttons .edit {
+	background-color: #ff9800;
+}
+
+/* Style the delete button */
+.task-buttons .delete {
+	background-color: #f44336;
+}
+
+/* Style the confirm delete modal */
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+}
+
+/* Style the modal content */
+.modal-content {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	max-width: 500px;
+	text-align: center;
+}
+
+/* Style the modal buttons */
+.modal-buttons button {
+	margin-right: 10px;
+	padding: 10px;
+	font-size: 1.2em;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+/* Style the confirm button */
+.modal-buttons .confirm {
+	background-color: #f44336;
+}
+
+/* Style the cancel button */
+.modal-buttons .cancel {
+	background-color: #2196F3;
+}
+
+/* Style the font */
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+.taskfild{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+}
+.date{
+  text-align: end;
+}
+
+
+/* Style the confirm delete modal */
+.modalEdit {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+}
+
+/* Style the modal content */
+.modalEdit-content {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	max-width: 500px;
+	text-align: center;
+}
+
+/* Style the modal buttons */
+.modalEdit-buttons button {
+	margin-right: 10px;
+	padding: 10px;
+	font-size: 1.2em;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+#updateTask {
+	flex-grow: 1;
+	padding: 10px;
+	font-size: 1.2em;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: #fff;
+  margin: 10px 0px;
+}
+.btn{
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 20px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.cancelBtn{
+  background-color: #ff9800;
+}
+.deleteBtn{
+  background-color: #f44336;
+  color: white;
+}
+.updateBtn{
+  background-color: green;
+  color: white;
+}
+.confirmText{
+  margin-bottom: 10px;
+}
