@@ -15,7 +15,9 @@ This is a simple to-do list app built with HTML, CSS, and JavaScript. It allows 
 To get started with this app, simply clone the repository and open the index.html file in your web browser:
 
 git clone https://github.com/engrmaruf/To-Do-List-App
+
 cd to-do-list-app
+
 open index.html
 
 ## Usage
